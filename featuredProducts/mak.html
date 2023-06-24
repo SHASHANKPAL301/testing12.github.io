@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Featured product</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+  <!-- =======================================================
+  * Template Name: TheEvent
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<style>
+  .breadcrumbs {
+    padding: 140px 0 60px 0;
+    min-height: 30vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .breadcrumbs:before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    inset: 0;
+  }
+
+  .breadcrumbs h2 {
+    font-size: 56px;
+    font-weight: 500;
+    color: #fff;
+    font-family: var(--font-secondary);
+  }
+
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0 0 10px 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+
+  .breadcrumbs ol a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+  }
+
+  .breadcrumbs ol a:hover {
+    text-decoration: underline;
+  }
+
+  .breadcrumbs ol li+li {
+    padding-left: 10px;
+  }
+
+  .breadcrumbs ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #fff;
+    content: "/";
+  }
+
+  :root {
+    --color-default: #364d59;
+    --color-primary: #95d5b2;
+    --color-secondary: #52565e;
+  }
+
+
+  .img {
+    margin-left: 0%;
+  }
+
+  .header {
+    z-index: 997;
+    position: sticky;
+    background-color: white;
+    color: #059652;
+    padding: 20px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+
+  }
+
+  .header .logo img {
+    max-height: 108px;
+    margin-right: 60px;
+  }
+
+  .header .logo h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2f8f67;
+    margin-bottom: 0;
+    font-family: var(--font-primary);
+  }
+
+  .header .logo h1 span {
+    color: var(--color-primary);
+  }
+
+  /*--------------------------------------------------------------
+# Desktop Navigation
+--------------------------------------------------------------*/
+  @media (min-width: 1280px) {
+    .navbar {
+      padding: 0;
+    }
+
+    .navbar ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+      align-items: center;
+
+    }
+
+    .navbar li {
+      position: relative;
+    }
+
+    .navbar>ul>li {
+      white-space: nowrap;
+      padding: 10px 0 10px 28px;
+
+    }
+
+    .navbar a,
+    .navbar a:focus {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 3px;
+      font-family: var(--font-primary);
+      font-size: 21px;
+      font-weight: 500;
+      color: rgb(9, 9, 9);
+      text-transform: uppercase;
+      white-space: nowrap;
+      transition: 0.3s;
+      position: relative;
+    }
+
+    .navbar a i,
+    .navbar a:focus i {
+      font-size: 12px;
+      line-height: 0;
+      margin-left: 5px;
+    }
+
+
+    .navbar>ul>li>a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -6px;
+      left: 0;
+      background-color: #2f8f67;
+      visibility: hidden;
+      width: 0px;
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+
+    .navbar a:hover:before,
+    .navbar li:hover>a:before,
+    .navbar .active:before {
+      visibility: visible;
+      width: 100%;
+    }
+
+    .navbar a:hover,
+    .navbar .active,
+    .navbar .active:focus,
+    .navbar li:hover>a {
+      color: #2f8f67;
+      ;
+
+    }
+
+    .navbar .dropdown ul {
+      display: block;
+      position: absolute;
+      left: 28px;
+      top: calc(100% + 30px);
+      margin: 0;
+      padding: 10px 0;
+      z-index: 99;
+      opacity: 0;
+      visibility: hidden;
+      background: #fff;
+      box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+      transition: 0.3s;
+    }
+
+    .navbar .dropdown ul li {
+      min-width: 200px;
+    }
+
+    .navbar .dropdown ul a {
+      padding: 10px 20px;
+      font-size: 15px;
+      text-transform: none;
+      color: var(--color-default);
+      font-weight: 400;
+    }
+
+    .navbar .dropdown ul a i {
+      font-size: 12px;
+    }
+
+    .navbar .dropdown ul a:hover,
+    .navbar .dropdown ul .active:hover,
+    .navbar .dropdown ul li:hover>a {
+      color: var(--color-primary);
+    }
+
+    .navbar .dropdown:hover>ul {
+      opacity: 1;
+      top: 100%;
+      visibility: visible;
+    }
+
+    .navbar .dropdown .dropdown ul {
+      top: 0;
+      left: calc(100% - 30px);
+      visibility: hidden;
+    }
+
+    .navbar .dropdown .dropdown:hover>ul {
+      opacity: 1;
+      top: 0;
+      left: 100%;
+      visibility: visible;
+    }
+  }
+
+  @media (min-width: 1280px) and (max-width: 1366px) {
+    .navbar .dropdown .dropdown ul {
+      left: -90%;
+    }
+
+    .navbar .dropdown .dropdown:hover>ul {
+      left: -100%;
+    }
+  }
+
+  @media (min-width: 1280px) {
+
+    .mobile-nav-show,
+    .mobile-nav-hide {
+      display: none;
+    }
+  }
+
+  /*--------------------------------------------------------------
+# Mobile Navigation
+--------------------------------------------------------------*/
+  @media (max-width: 1279px) {
+    .navbar {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      max-width: 400px;
+      bottom: 0;
+      transition: 0.3s;
+      z-index: 9997;
+    }
+
+    .navbar ul {
+      position: absolute;
+      inset: 0;
+      padding: 50px 0 10px 0;
+      margin: 0;
+      background: rgba(0, 0, 0, 0.8);
+      overflow-y: auto;
+      transition: 0.3s;
+      z-index: 9998;
+    }
+
+    .navbar a,
+    .navbar a:focus {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      font-family: var(--font-primary);
+      font-size: 15px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.7);
+      white-space: nowrap;
+      text-transform: uppercase;
+      transition: 0.3s;
+    }
+
+    .navbar a i,
+    .navbar a:focus i {
+      font-size: 12px;
+      line-height: 0;
+      margin-left: 5px;
+    }
+
+    .navbar a:hover,
+    .navbar .active,
+    .navbar .active:focus,
+    .navbar li:hover>a {
+      color: #fff;
+    }
+
+    .navbar .dropdown ul,
+    .navbar .dropdown .dropdown ul {
+      position: static;
+      display: none;
+      padding: 10px 0;
+      margin: 10px 20px;
+      transition: all 0.5s ease-in-out;
+      border: 1px solid #222428;
+    }
+
+    .navbar .dropdown>.dropdown-active,
+    .navbar .dropdown .dropdown>.dropdown-active {
+      display: block;
+    }
+
+    .mobile-nav-show {
+      position: relative;
+      color: black;
+      font-size: 28px;
+      cursor: pointer;
+      line-height: 0;
+      transition: 0.5s;
+      z-index: 9999;
+      padding-right: 10px;
+    }
+
+    .mobile-nav-hide {
+      color: #fff;
+      font-size: 32px;
+      cursor: pointer;
+      line-height: 0;
+      transition: 0.5s;
+      position: fixed;
+      right: 20px;
+      top: 20px;
+      z-index: 9999;
+    }
+
+    .mobile-nav-active {
+      overflow: hidden;
+    }
+
+    .mobile-nav-active .navbar {
+      right: 0;
+    }
+
+    .mobile-nav-active .navbar:before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 9996;
+    }
+  }
+
+  #speakers .speaker .details {
+    background: rgba(6, 12, 34, 0.76);
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+    right: 0;
+    text-align: center;
+    padding-top: 10px;
+
+    transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  /* for 2 sublink */
+
+  #speakers .speaker .details2 {
+    background: rgba(6, 12, 34, 0.76);
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    right: 0;
+    text-align: center;
+    padding-top: 10px;
+
+    transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  #speakers .speaker .details2 h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  #speakers .speaker .details2 p {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+
+  #speakers .speaker .details2 .social {
+    height: 40px;
+  }
+
+  #speakers .speaker .details2 .social i {
+    line-height: 0;
+    margin: 0 2px;
+  }
+
+  #speakers .speaker .details2 a {
+    color: #fff;
+  }
+
+  #speakers .speaker .details2 a:hover {
+    color: #f82249;
+  }
+
+  #speakers .speaker:hover .details2 {
+    bottom: 0;
+  }
+
+  #speakers-details {
+    padding: 60px 0;
+  }
+
+  #speakers-details .details2 h2 {
+    color: #112363;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 100px;
+  }
+
+  #speakers-details .details2 .social {
+    margin-bottom: 15px;
+  }
+
+  #speakers-details .details2 .social a {
+    background: #e9edfb;
+    color: #112363;
+    line-height: 1;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 36px;
+    height: 136px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #speakers-details .details2 .social a:hover {
+    background: #f82249;
+    color: #fff;
+  }
+
+  #speakers-details .details2 .social a i {
+    font-size: 16px;
+    line-height: 0;
+  }
+
+  #speakers-details .details2 p {
+    color: #112363;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: -70px;
+  }
+
+  /* ---for 3 sublink--- */
+  #speakers .speaker .details3 {
+    background: rgba(6, 12, 34, 0.76);
+    position: absolute;
+    left: 0;
+    bottom: -92px;
+    right: 0;
+    text-align: center;
+    padding-top: 10px;
+
+    transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  #speakers .speaker .details3 h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  #speakers .speaker .details3 p {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+
+  #speakers .speaker .details3 .social {
+    height: 40px;
+  }
+
+  #speakers .speaker .details3 .social i {
+    line-height: 0;
+    margin: 0 2px;
+  }
+
+  #speakers .speaker .details3 a {
+    color: #fff;
+  }
+
+  #speakers .speaker .details3 a:hover {
+    color: #f82249;
+  }
+
+  #speakers .speaker:hover .details3 {
+    bottom: 0;
+  }
+
+  #speakers-details {
+    padding: 60px 0;
+  }
+
+  #speakers-details .details3 h2 {
+    color: #112363;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 100px;
+  }
+
+  #speakers-details .details3 .social {
+    margin-bottom: 15px;
+  }
+
+  #speakers-details .details3 .social a {
+    background: #e9edfb;
+    color: #112363;
+    line-height: 1;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 36px;
+    height: 136px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #speakers-details .details3 .social a:hover {
+    background: #f82249;
+    color: #fff;
+  }
+
+  #speakers-details .details3 .social a i {
+    font-size: 16px;
+    line-height: 0;
+  }
+
+  #speakers-details .details3 p {
+    color: #112363;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: -70px;
+  }
+
+
+  /* ---four-- */
+  #speakers .speaker .details4 {
+    background: rgba(6, 12, 34, 0.76);
+    position: absolute;
+    left: 0;
+    bottom: -124px;
+    right: 0;
+    text-align: center;
+    padding-top: 10px;
+
+    transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  #speakers .speaker .details4 h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  #speakers .speaker .details4 p {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+
+  #speakers .speaker .details4 .social {
+    height: 40px;
+  }
+
+  #speakers .speaker .details4 .social i {
+    line-height: 0;
+    margin: 0 2px;
+  }
+
+  #speakers .speaker .details4 a {
+    color: #fff;
+  }
+
+  #speakers .speaker .details4 a:hover {
+    color: #f82249;
+  }
+
+  #speakers .speaker:hover .details4 {
+    bottom: 0;
+  }
+
+  #speakers-details {
+    padding: 60px 0;
+  }
+
+  #speakers-details .details4 h2 {
+    color: #112363;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 100px;
+  }
+
+  #speakers-details .details4 .social {
+    margin-bottom: 15px;
+  }
+
+  #speakers-details .details4 .social a {
+    background: #e9edfb;
+    color: #112363;
+    line-height: 1;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 36px;
+    height: 136px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #speakers-details .details4 .social a:hover {
+    background: #f82249;
+    color: #fff;
+  }
+
+  #speakers-details .details4 .social a i {
+    font-size: 16px;
+    line-height: 0;
+  }
+
+  #speakers-details .details4 p {
+    color: #112363;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: -70px;
+  }
+
+  #mak {
+    width: 65%;
+    height: 100%;
+    margin-left: 115px;
+  }
+</style>
+
+<body>
+
+  <!-- ======= Header ======= -->
+
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center
+    justify-content-between">
+      <div id="img">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img "  src=" ../assets/img/compacLogo.jpg" alt="logo">
+
+
+        </a>
+      </div>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+      <div id="navbar">
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="../index.html" class="active">HOME</a></li>
+
+            <!--             
+            <li class="dropdown"><a href="#"><span>About</span> <i
+            class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              
+              <li><a href="about.html">About us</a></li>
+              <li><a href="#">Vision</a></li>
+              <li><a href="#">Mission</a></li>
+              <li><a href="#">Our Values</a></li>
+              <li><a href="#">Team</a></li>
+            </ul>
+          </li>  -->
+            <li><a href="../about.html">ABOUT US</a></li>
+            <li class="dropdown"><a href="#"><span>PRODUCTS</span> <i
+                  class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <ul>
+
+                <li class="dropdown"><a href="#"><span>INDUSTRIAL PRODUCTS</span> <i
+                      class="bi bi-chevron-down dropdown-indicator"></i></a>
+                  <ul>
+                    <!-- <li><a href="#">Industrial products</a></li> -->
+                    <li><a href="#">Adhesives & Coating </a></li>
+                    <li><a href="productdetails/conventional.html">Industrial lubricants</a></li>
+                    <li><a href="#">Metal working fluid</a></li>
+                    <!-- <li><a href="#">Industrial hand and arm protection </a></li>  -->
+                    <li><a href="#">Performance  equipments </a></li>
+                    <li><a href="#">Powder coatings & liquid paints</a></li>
+                    <li><a href="#">Release agents</a></li>
+                    <li><a href="#">Safety & Protection Solution</a></li>
+                    <li><a href="#">Specialty lubricants </a></li>
+                    <li><a href="#">Wurth range of products </a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown"><a href="#"><span>TRAINING EQUIPMENT</span>
+                    <i class="bi bi-chevron-down
+                    dropdown-indicator"></i></a>
+                  <ul>
+                    <li><a href="#">BASIC ELECTRONIC LAB</a></li>
+                    <li><a href="#">ELECTRICAL ENGINEERING LAB</a></li>
+                    <li><a href="#">PHYSICS LAB</a></li>
+
+                  </ul>
+                </li>
+
+            </li>
+
+          </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">COOLENT MANAGEMENT</a></li>
+              <li><a href="#">COST OPTIMISATIONS</a></li>
+              <li><a href="#">LUBRICATION MANAGEMENT</a></li>
+              <li><a href="services.html">PRE-APPLIED COATING</a></li>
+              <li><a href="#">PLANT SURVEY</a></li>
+
+              <li><a href="#">SPECIAL COATING AND EPOXY FLOURING</a></li>
+
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Brand</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+
+              <li><a href="about.html">About us</a></li>
+              <li><a href="#">Vision</a></li>
+              <li><a href="#">Mission</a></li>
+              <li><a href="#">Our Values</a></li>
+              <li><a href="#">Team</a></li>
+
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="#"><span>Knowledge Hub</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">News</a></li>
+
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Articles</a></li>
+
+            </ul>
+          </li>
+          <li><a href="projects.html">Careers</a></li>
+          <li><a href="projects.html">contact us</a></li>
+          <!-- <li><a href="contact.html">Contact</a></li> -->
+          </ul>
+        </nav>
+      </div>
+      <!-- .navbar -->
+
+    </div>
+  </header>
+  <div class="breadcrumbs d-flex align-items-center" style="background-image: url('../assets/img/breadcrumbs-bg.jpg');">
+    <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+      <h2>CONVENTIONAL LUBRICANT</h2>
+      <ol>
+        <li><a href="../index.html">HOME</a></li>
+
+        <li><a href="">PRODUCTS</a></li>
+        <li><a href="#alt-services">INDUSTRIAL PRODUCTS</a> </li>
+        <li>MAK LUBRICANTS </li>
+        <!-- <li><a href="#value">Values</a> </li> -->
+
+      </ol>
+
+    </div>
+  </div>
+
+  <!-- End Header -->
+  <section id="speakers-details">
+    <div class="container">
+      <div class="section-header">
+        <h2>MAK LUBRICANTS</h2>
+        <p>Praesentium ut qui possimus sapiente nulla.</p>
+      </div>
+
+      <div class="row">
+        <div class="mak">
+          <img src="assets/img/MAK Logo-min.jpg" alt="Speaker 1" class="img-fluid" id="mak">
+        </div>
+
+        <div class="col-md-6">
+          <div class="details">
+            <h2>MAK LUBRICANT</h2>
+
+            <p>MAK Lubricants are a trusted lubricant brand in the industrial segment, catering to specific requirements
+              of textiles, power, sugar, steel, off-highway vehicles and many others industries. We leave no stone
+              unturned to suit the needs of specific industries and maximize performance. To achieve this level of
+              optimization, each of the MAK lubricants in the wide product array is developed in close coordination with
+              these industries.
+            </p>
+
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- ======= Hotels Section ======= -->
+  <section id="hotels" class="section-with-bg">
+
+    <div class="container" data-aos="fade-up">
+      <!-- <div class="section-header">
+      <h2>Hotels</h2>
+      <p>Her are some nearby hotels</p>
+    </div> -->
+
+
+      <h1>image of your product</h1>
+
+
+    </div>
+    </div>
+
+  </section><!-- End Hotels Section -->
+  <main id="main">
+
+
+
+    <!-- ======= Speakers Section ======= -->
+    <section id="speakers">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>FEATURED PRODUCTS</h2>
+          <p>Here are some of our featured products</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
+              <div class="details3">
+                <h3><a href="#">COMPRESSOR OILS</a></h3>
+
+
+
+
+                <p> <a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-Compressor-Oil.aspx">MAK
+                    COMPRESSOR OIL</a> </p>
+                <p> <a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-Screwcom.aspx">MAK
+                    SCREWCOM</a> </p>
+                <p> <a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-Syncom.aspx">MAK
+                    SYNCOM</a> </p>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/speakers/2.jpg" alt="Speaker 2" class="img-fluid">
+              <div class="details3">
+                <h3><a href="#">ENGINE OILS</a></h3>
+
+
+                <p><a
+                    href="https://www.bharatpetroleum.in/our-businesses/mak-lubricants/industrial-lubricants/mak-multigrade.aspx">MAK
+                    MULTIGRADE</a></p>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-Ultra-Supreme.aspx">MAK
+                    ULTRA SUPREME</a></p>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-Platinum.aspx">MAK
+                    PLATINUM</a></p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="assets/img/speakers/3.jpg" alt="Speaker 3" class="img-fluid">
+              <div class="details4">
+                <h3><a href="#">GREASES</a></h3>
+
+
+
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-HITEMP-XTRA-GREASE.aspx">MAK
+                    HITEMP XTRA GREASE</a></p>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-MP-Grease.aspx">MAK
+                    MP GREASE</a></p>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-MULTIPLEX-CS-GREASE.aspx">
+                    MAK MULTIPLEX CS GREASE</a></p>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-LANTHAX-EP-GREASE.aspx">MAK
+                    LANTHAX EP GREASE</a></p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/speakers/4.jpg" alt="Speaker 4" class="img-fluid">
+              <div class="details2">
+                <h3><a href="#">HEAT TRANSFER FLUID</h3>
+
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-Thermic-Fluid-A.aspx">MAK
+                    THERMIC FLUID </a></p>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-Thermic-Fluid-Synth.aspx">
+                    MAK THERMIC FLUID SYNTH </a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
+              <div class="details2">
+                <h3><a href="#">HEAT TREATMENT OILS</a></h3>
+
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-Quenching-Oil-C.aspx">
+                    MAK QUENCHING OIL C</a></p>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-Thermol.aspx">MAK
+                    THERMOL</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="assets/img/speakers/6.jpg" alt="Speaker 6" class="img-fluid">
+              <div class="details3">
+                <h3><a href="#">HYDRAULIC OILS</a></h3>
+
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-HYDROL-AW.aspx">MAK
+                    HYDROL AW </a></p>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-HYDROL-HLP.aspx">MAK
+                    HYDROL HLP</a></p>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-Hydrol-HVLP.aspx">MAK
+                    HYDROL HVLP</a></p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
+              <div class="details3">
+                <h3><a href="#">INDUSTRIAL GEAR OILS</a></h3>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-Cabol.aspx">MAK
+                    CABOL </a></p>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-AMOCAM.aspx">MAK
+                    AMOCAM </a></p>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-Syngear.aspx">MAK
+                    SYNGEAR</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
+              <div class="details4">
+                <h3><a href="#"> METAL CUTTING OILS</a></h3>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-Norcam.aspx">
+                    MAK NORCAM</a></p>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-SHEROL-B.aspx">
+                    MAK SHEROL B</a></p>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-SHEROL-BN.aspx">MAK
+                    SHEROL BN</a></p>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-Triponol.aspx">MAK
+                    TRIPONOL</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
+              <div class="details">
+                <h3><a href="#">OPEN GEAR COMPOUND</a></h3>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-Camex-Compound.aspx">
+                    MAK CAMEX COMPOUND</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
+              <div class="details2">
+                <h3><a href="#">REGRIGERATION OILS</a></h3>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-Freezol-CS.aspx">
+                    MAK FREEZOL CS 68</a></p>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-Freezol.aspx">MAK
+                    FREEZOL 68 </a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
+              <div class="details">
+                <h3><a href="#">SLIDEWAY OIL</a></h3>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-Metamol.aspx">
+                    MAK METAMOL </a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
+              <div class="details">
+                <h3><a href="#">SPECIALTY OIL</a></h3>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-LLPO.aspx">
+                    MAK LLPO </a></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
+              <div class="details2">
+                <h3><a href="#"> TEXTILE OILS</a></h3>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-KNIT-PLUS-22.aspx">
+                    MAK KNIT PLUS 22 </a></p>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-TEXTROL-EE-10.aspx">MAK
+                    TEXTROL EE</a></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
+              <div class="details">
+                <h3><a href="#">TURBINE OIL</a></h3>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-TURBOL.aspx">
+                    MAK TURBOL </a></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
+              <div class="details">
+                <h3><a href="#">TRANSFORMER OIL</a></h3>
+                <p><a
+                    href="https://www.bharatpetroleum.in/Our-Businesses/MAK-Lubricants/Industrial-Lubricants/MAK-Hivoltol.aspx">
+                    MAK HIVOLTOL </a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End Speakers Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+
+
+
+
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</body>
+
+</html>
